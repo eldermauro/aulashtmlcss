@@ -1,0 +1,52 @@
+*{
+    padding: 5px;
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 34, 146);
+    border-radius: 10px;
+
+}
+
+img{
+    height: 225px;
+    width: 225px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+
+.tela{
+    background-color: rgb(106, 132, 132);
+    margin: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 0px 9px 0px;
+}
+
+h1,p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    background-color: brown;
+    border-radius: 10px;
+    padding-left:15px ;
+    padding-right: 15px;
+}
+
+span:hover{
+    color: azure;
+    background-color: blue;
+}
