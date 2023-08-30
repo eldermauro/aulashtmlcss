@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="/stilo/style.css">
+    lin
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site aula</title>
 </head>
@@ -20,7 +23,22 @@
             <a href="">CONTATO</a>
         </div>
 
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+
+        </div>
     </header>
+
+    <nav class="mobile-menu">
+        <a href="">HOME</a>
+        <a href="">EMPRESA</a>
+        <a href="">CONTATO</a>
+
+    </nav>
+
+
+
+
     <!--aqui fica cabeçario-->
 
     <!--meio-->
@@ -50,10 +68,21 @@
        </section>
 
        <footer class="rodape">
-        <i>facebbok</i>
+        <i class="fa-brands fa-facebook">facebbok</i>
         <i>Instragram</i>
         <i>Whatzap</i>
        </footer>
+
+
+       <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        </script>
 
     
 </body>

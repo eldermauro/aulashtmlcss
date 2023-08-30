@@ -28,11 +28,46 @@ body{
 
 .menu{
     margin: 10px;
+    display: flex;
 }
 
 .menu a{
     padding: 10px;
     margin-left: 20px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    background-color: aqua;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+    text-align: center;
+    border: 1 solid blue;
+    z-index: 1;
+}
+
+@media only screen and (max-widht: 768px){
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu.active{
+        display: flex;
+    }
 }
 
 
@@ -71,18 +106,31 @@ body{
     transition: 2s;
 }
 
+
 .cell{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que as células quebrem para a próxima linha */
+    justify-content: center; /* Centraliza as células horizontalmente */
 }
+
 
 .cell img{
     background-color: aqua;
     margin: 20px;
     text-align: center;
     padding: 40px;
+    box-sizing: border-box; /* Mantém a largura dentro do espaço da célula */
 }
+
+/* Adicione regras de media query para ajustar o layout em diferentes tamanhos de tela */
+@media(min-width: 768px){
+    .cell{
+        justify-content: space-around; /* Espaçamento entre as células em telas maiores */
+    }
+}
+
+
 
 .info{
     color: antiquewhite;
