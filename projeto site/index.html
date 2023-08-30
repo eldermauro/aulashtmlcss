@@ -2,87 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link rel="stylesheet" href="/stilo/style.css">
-    lin
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site aula</title>
+    <link rel="stylesheet" href="/stilo/style.css">
+    <title>Exercicio 4</title>
 </head>
 <body>
 
-    <!--aqui fica cabeçario-->
     <header class="container">
-
         <img src="/img/logo.png" alt="" height="80">
-
+        
         <div class="menu">
-            <a href="">HOME</a>
-            <a href="">EMPRESA</a>
+            <a href="index.html">HOME</a>
+            <a href="empresa.html">EMPRESA</a>
             <a href="">CONTATO</a>
         </div>
-
         <div class="hamburger">
-            <i class="fa fa-bars"></i>
-
+            <i class="fas fa-bars"></i>
         </div>
     </header>
-
+    
     <nav class="mobile-menu">
-        <a href="">HOME</a>
-        <a href="">EMPRESA</a>
+        <a href="index.html">HOME</a>
+        <a href="empresa.html">EMPRESA</a>
         <a href="">CONTATO</a>
-
     </nav>
 
-
-
-
-    <!--aqui fica cabeçario-->
-
-    <!--meio-->
-    <main class="meio">
-
-        <div class="card">
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatibus provident enim mollitia facere optio, culpa esse perspiciatis ipsam eum tempora aperiam tempore consequuntur reiciendis voluptate quod temporibus officia facilis!</p><br>
-
+<main class="meio">
+    <div class="card">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam tenetur blanditiis cumque? Voluptatum aperiam enim aliquid debitis iure at laboriosam expedita. Ut, temporibus ex. Numquam ipsa molestiae totam ad!</p><br>
         <span id="botao">Saiba Mais</span>
-
-        </div>
-
-    </main>
-       <!--meio-->
-
-       <section class="cell">
-
-        <img src="/img/cell1.png" alt="" width="360" height="360">
-        <img src="/img/cell2.png" alt="" width="360" height="360">
-
-       </section>
-
-       <section class="info">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum porro praesentium repellat id doloribus libero ab, expedita repellendus nihil tenetur eaque modi nostrum eveniet ipsam! Veritatis optio molestias voluptates!</p>
-        <span id="botao">Saiba Mais</span>
-       </section>
-
-       <footer class="rodape">
-        <i class="fa-brands fa-facebook">facebbok</i>
-        <i>Instragram</i>
-        <i>Whatzap</i>
-       </footer>
-
-
-       <script>
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
         
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-        
-        </script>
+    </div>
+
+    
+</main>
+
+<section class="cell">
+    <img src="/img/cell1.png" alt="" height="360" width="360">
+    <img src="/img/cell2.png" alt="" height="360" width="360">
+</section>
+
+<section class="info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia illum aperiam quidem repellat accusantium debitis tempore quas beatae error, labore harum ipsam doloremque id? Sit nisi quas impedit sed.</p><br>
+    <span id="botao">Saiba Mais</span>
+</section>
+
+<footer class="rodape">
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+</footer>
+
+
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+});
+
+</script>
 
     
 </body>
